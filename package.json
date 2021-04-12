@@ -1,0 +1,28 @@
+{
+  "name": "discord-audio-capture",
+  "version": "1.0.0",
+  "description": "A NodeCG bundle to capture audio and play it in OBS.",
+  "homepage": "https://github.com/nicnacnic/discord-audio-capture",
+  "author": "nicnacnic",
+  "url": "https://nicnacnic.com",
+  "license": "MIT",
+  "nodecg": {
+    "compatibleRange": "^1.6.0",
+    "graphics": [
+      {
+        "file": "discord-audio.html",
+        "width": 1,
+        "height": 1
+      }
+    ]
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.5.0",
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "discord.js": "^12.5.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "*",
+    "howler": "^2.2.1",
+    "opusscript": "^0.0.8"
+  }
+}

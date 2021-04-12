@@ -4,7 +4,8 @@ const OpusScript = require("opusscript");
 const command = require('./commands');
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 const ffmpeg = require('fluent-ffmpeg');
-let botToken, prefix;
+let botToken;
+let prefix = '!nodecg ';
 let connection;
 let audio;
 
@@ -24,7 +25,7 @@ module.exports = function(nodecg) {
 		});
 	})
 }
-client.login('ODMxMTQ3MjczNDYyMzQ5ODk0.YHRANw.SekZBO5HZ9FzLkGB22qt3BTaLq8');
+client.login('bot token here');
 
 async function record(message) {
 	connection = await message.member.voice.channel.join();
